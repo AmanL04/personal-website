@@ -1,0 +1,75 @@
+/* Footer Area css
+============================================================================================ */
+.blog_version {
+	.footer_area {
+		background: #f9f9fd;
+		&:before {
+			content: none;
+		}
+	}
+}
+.footer_area {
+	padding: 30px 0 10px 0;
+	position: relative;
+	color: #fff;
+	border-radius: 5px;
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%),
+		radial-gradient(circle at top left, #4458dc, #854fee);
+	border: double 2px transparent;
+	box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+	@media (max-width: 1024px) {
+		padding: 60px 0;
+	}
+	.footer_logo {
+		text-align: center;
+		h4 {
+			font-size: 20px;
+			color: #000000;
+			margin-top: 35px;
+			text-transform: uppercase;
+		}
+	}
+	.footer_social {
+		text-align: center;
+		margin: 25px 0px 30px;
+		h2 {
+			color: #f1f9ff;
+			margin-bottom: 1.6rem;
+		}
+		a {
+			padding: 0 20px;
+			i {
+				color: #dfebf5;
+				font-size: 22px;
+				@include transition();
+				@media (max-width: 576px) {
+					font-size: 25px;
+				}
+				&:hover {
+					transform: scale(1.5);
+					color: #4458dc;
+					background-color: white;
+					border-radius: 50%;
+					padding: 0.7rem;
+				}
+			}
+		}
+	}
+
+	.footer_bottom {
+		text-align: center;
+		color: rgb(207, 204, 204);
+		p {
+			margin-bottom: 0;
+		}
+		a {
+			color: rgb(177, 174, 174);
+			cursor: text;
+		}
+	}
+}
+
+/* End Footer Area css
+============================================================================================ */
